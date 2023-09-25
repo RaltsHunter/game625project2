@@ -7,6 +7,8 @@ public class PointOfInterest : Subject
     [SerializeField]
     private string poiName;
 
+    public GameManager gm;
+
     public Item Item;
 
     void Pickup()
@@ -17,7 +19,27 @@ public class PointOfInterest : Subject
 
     private void OnTriggerEnter(Collider other)
     {
-        Notify(poiName, NotificationType.AchievementUnlocked);
-        Pickup();
+        if (gameObject.tag == "Healthy")
+        {
+            Notify(poiName, NotificationType.AchievementUnlocked);
+            Pickup();
+            /*
+            gm.healthy++;
+            gm.hunger = gm.hunger + 25;
+            Debug.Log("Healthy food: " + gm.healthy);
+            Debug.Log("Fullness: " + gm.hunger);
+            */
+        }
+        if (gameObject.tag == "Junk")
+        {
+            Notify(poiName, NotificationType.AchievementUnlocked);
+            Pickup();
+            /*
+            gm.junk++;
+            gm.hunger = gm.hunger + 25;
+            Debug.Log("Healthy food: " + gm.healthy);
+            Debug.Log("Fullness: " + gm.hunger);
+            */
+        }
     }
 }
