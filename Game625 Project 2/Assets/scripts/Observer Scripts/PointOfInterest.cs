@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,10 +12,16 @@ public class PointOfInterest : Subject
 
     public Item Item;
 
+    public event Action OnCollected;
+
     void Pickup()
     {
         InventoryManager.Instance.Add(Item);
         Destroy(gameObject);
+      
+        
+        Notify(poiName, NotificationType.AchievementUnlocked);
+        Collect();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -41,5 +48,11 @@ public class PointOfInterest : Subject
             Debug.Log("Fullness: " + gm.hunger);
             */
         }
+    }
+    public void Collect()
+    {
+        Debug.Log("Collect method called"); 
+        OnCollected?.Invoke();
+        SoundManager.Instance.PlayCollectSound();
     }
 }
