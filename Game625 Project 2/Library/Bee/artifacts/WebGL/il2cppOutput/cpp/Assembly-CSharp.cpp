@@ -3303,7 +3303,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointOfInterest_OnTriggerEnter_m62CD10AD
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_7 = __this->___gm;
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_8 = __this->___gm;
 		int32_t L_9 = L_8->___hunger;
-		L_7->___hunger = ((int32_t)il2cpp_codegen_add(L_9, ((int32_t)25)));
+		L_7->___hunger = ((int32_t)il2cpp_codegen_add(L_9, ((int32_t)10)));
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_10 = __this->___gm;
 		int32_t* L_11 = (int32_t*)(&L_10->___healthy);
 		String_t* L_12;
@@ -3345,7 +3345,7 @@ IL_0094:
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_25 = __this->___gm;
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_26 = __this->___gm;
 		int32_t L_27 = L_26->___hunger;
-		L_25->___hunger = ((int32_t)il2cpp_codegen_add(L_27, ((int32_t)25)));
+		L_25->___hunger = ((int32_t)il2cpp_codegen_add(L_27, ((int32_t)10)));
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_28 = __this->___gm;
 		int32_t* L_29 = (int32_t*)(&L_28->___healthy);
 		String_t* L_30;

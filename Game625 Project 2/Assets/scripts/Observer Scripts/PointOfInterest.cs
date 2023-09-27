@@ -32,7 +32,7 @@ public class PointOfInterest : Subject
             Pickup();
             
             gm.healthy++;
-            gm.hunger = gm.hunger + 25;
+            gm.hunger = gm.hunger + 10;
             Debug.Log("Healthy food: " + gm.healthy);
             Debug.Log("Fullness: " + gm.hunger);
             
@@ -43,7 +43,7 @@ public class PointOfInterest : Subject
             Pickup();
             
             gm.junk++;
-            gm.hunger = gm.hunger + 25;
+            gm.hunger = gm.hunger + 10;
             Debug.Log("Healthy food: " + gm.healthy);
             Debug.Log("Fullness: " + gm.hunger);
             
