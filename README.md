@@ -2,7 +2,7 @@ A project by Watkin Jones, Alethea Saliba, and Ben Ross for Game 625
 
 Project Repository: https://github.com/RaltsHunter/game625project2
 
-Playable Link: https://raltshunter.github.io/game625project2/Game625Project2/play
+Playable Link: https://raltshunter.github.io/game625project2/Game625Project2/Play
 
 Attributions:
 
