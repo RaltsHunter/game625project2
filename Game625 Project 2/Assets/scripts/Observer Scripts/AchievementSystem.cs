@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class AchievementSystem : Observer
 {
+    public TMP_Text AchievementDisplay;
+
     private void Start()
     {
         PlayerPrefs.DeleteAll();
@@ -22,6 +26,8 @@ public class AchievementSystem : Observer
 
             if (PlayerPrefs.GetInt(achievementKey) == 1)
                 return;
+
+            AchievementDisplay.text = "You collected a " + value;
 
             PlayerPrefs.SetInt(achievementKey, 1);
             Debug.Log("Unlocked" + value);

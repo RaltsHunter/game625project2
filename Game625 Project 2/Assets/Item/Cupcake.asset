@@ -15,4 +15,4 @@ MonoBehaviour:
   id: 3
   itemName: Cupcake
   value: 0
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: af6ad958359276046b56f0cef9b15dd8, type: 3}

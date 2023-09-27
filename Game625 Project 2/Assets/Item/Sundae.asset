@@ -15,4 +15,4 @@ MonoBehaviour:
   id: 4
   itemName: Sundae
   value: 0
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: e4e6caa0ee186ac4792b1a6f951416d1, type: 3}
